@@ -13,8 +13,6 @@ public class AudioSpectrum : MonoBehaviour
     float[] freqBandHighest = new float[8];
     public float[] audioBand = new float[8];
     public float[] audioBandBuffer = new float[8];
-
-
       AudioSource aSource;
     //public static float specValue { get; private set; }
 
@@ -23,6 +21,7 @@ public class AudioSpectrum : MonoBehaviour
     {
         //audSpec = new float[512];
         aSource = GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
