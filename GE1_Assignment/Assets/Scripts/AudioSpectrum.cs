@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 [RequireComponent (typeof(AudioSource))]
 public class AudioSpectrum : MonoBehaviour
@@ -13,7 +14,10 @@ public class AudioSpectrum : MonoBehaviour
     float[] freqBandHighest = new float[8];
     public float[] audioBand = new float[8];
     public float[] audioBandBuffer = new float[8];
-      AudioSource aSource;
+    AudioSource aSource;
+
+    public float amplitude, amplitudeBuffer;
+    float amplitudeHighest;
     //public static float specValue { get; private set; }
 
     // Start is called before the first frame update
@@ -37,6 +41,24 @@ public class AudioSpectrum : MonoBehaviour
         makeFrequencyBands();
         BandBuffer();
         createAudioBands();
+        getAmplitude();
+    }
+    //Causing many an issue, audio bands = infinite so amp doesnt do anything
+    void getAmplitude()
+    {
+        float currentAmplitude = 0;
+        float currentAmpBuffer = 0;
+        for (int i = 0; i < 8; i++)
+        {
+            currentAmplitude += audioBand[i];
+            currentAmpBuffer += audioBandBuffer[i];
+            if (currentAmplitude > amplitudeHighest)
+            {
+                amplitudeHighest = currentAmplitude;
+            }
+            amplitude = currentAmplitude / amplitudeHighest;
+            amplitudeBuffer = currentAmpBuffer / amplitudeHighest;
+        }
     }
     void getSpectrumAudioSource()
     {
