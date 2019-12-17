@@ -10,8 +10,10 @@ public class AudioHandler : MonoBehaviour
     AudioSource a;
     public AudioClip song;
     public static int frameSize = 512;
-    public static float[] spectrum;
-    public static float[] bands;
+    public float[] spectrum;
+    public float[] bands;
+    public float[] bandBuffer;
+    private float[] bufferDecrease;
     public float binWid;
     public float sampleRate;
     public AudioMixerGroup master;
@@ -39,10 +41,28 @@ public class AudioHandler : MonoBehaviour
         a = GetComponent<AudioSource>();
         spectrum = new float[frameSize];
         bands = new float[(int)Mathf.Log(frameSize, 2)];
+        bandBuffer = new float[(int)Mathf.Log(frameSize, 2)];
+        bufferDecrease = new float[(int)Mathf.Log(frameSize, 2)];
         a.clip = song;
         a.outputAudioMixerGroup = master;
         a.Play();
 
+    }
+    void BandBuffer()
+    {
+        for (int i = 0; i < bands.Length; i++)
+        {
+            if (bands[i] > bandBuffer[i])
+            {
+                bandBuffer[i] = bands[i];
+                bufferDecrease[i] = 0.005f;
+            }
+            if (bands[i] < bandBuffer[i])
+            {
+                bandBuffer[i] -= bufferDecrease[i];
+                bufferDecrease[i] *= 1.2f;
+            }
+        }
     }
     void getFreqBands()
     {
@@ -65,5 +85,6 @@ public class AudioHandler : MonoBehaviour
     {
         a.GetSpectrumData(spectrum, 0, FFTWindow.Blackman);
         getFreqBands();
+        BandBuffer();
     }
 }

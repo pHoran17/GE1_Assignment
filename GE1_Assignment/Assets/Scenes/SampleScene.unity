@@ -482,12 +482,12 @@ PrefabInstance:
     - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
       propertyPath: startScale
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
       propertyPath: scaleMultiplier
-      value: 1000
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
@@ -504,6 +504,11 @@ PrefabInstance:
       propertyPath: useBuffer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
+        type: 3}
+      propertyPath: audioH
+      value: 
+      objectReference: {fileID: 1133659818}
     - target: {fileID: 5425577057048450401, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1057,6 +1062,7 @@ MonoBehaviour:
   - {fileID: 0}
   maxScale: 1000
   audioSpect: {fileID: 1133659815}
+  audioH: {fileID: 1133659818}
 --- !u!4 &898587559
 Transform:
   m_ObjectHideFlags: 0
@@ -1156,12 +1162,12 @@ PrefabInstance:
     - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
       propertyPath: startScale
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
       propertyPath: scaleMultiplier
-      value: 1000
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
@@ -1178,6 +1184,11 @@ PrefabInstance:
       propertyPath: useBuffer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
+        type: 3}
+      propertyPath: audioH
+      value: 
+      objectReference: {fileID: 1133659818}
     - target: {fileID: 5425577057048450401, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1289,6 +1300,7 @@ GameObject:
   - component: {fileID: 1133659817}
   - component: {fileID: 1133659816}
   - component: {fileID: 1133659815}
+  - component: {fileID: 1133659818}
   m_Layer: 0
   m_Name: Audio Source
   m_TagString: Untagged
@@ -1960,6 +1972,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1133659818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133659814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0af4050e44fcce345834b1df340343d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  song: {fileID: 8300000, guid: f0ee16d4b5bbbd141bd8d5064bdf22d0, type: 3}
+  spectrum: []
+  bands: []
+  bandBuffer:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  binWid: 0
+  sampleRate: 0
+  master: {fileID: 0}
 --- !u!1001 &1207599331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2045,12 +2084,12 @@ PrefabInstance:
     - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
       propertyPath: startScale
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
       propertyPath: scaleMultiplier
-      value: 1000
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
@@ -2067,6 +2106,11 @@ PrefabInstance:
       propertyPath: useBuffer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
+        type: 3}
+      propertyPath: audioH
+      value: 
+      objectReference: {fileID: 1133659818}
     - target: {fileID: 5425577057048450401, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2251,12 +2295,12 @@ PrefabInstance:
     - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
       propertyPath: startScale
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
       propertyPath: scaleMultiplier
-      value: 1000
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
@@ -2273,6 +2317,11 @@ PrefabInstance:
       propertyPath: useBuffer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
+        type: 3}
+      propertyPath: audioH
+      value: 
+      objectReference: {fileID: 1133659818}
     - target: {fileID: 5425577057048450401, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2365,12 +2414,12 @@ PrefabInstance:
     - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
       propertyPath: startScale
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
       propertyPath: scaleMultiplier
-      value: 1000
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
@@ -2387,6 +2436,11 @@ PrefabInstance:
       propertyPath: useBuffer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
+        type: 3}
+      propertyPath: audioH
+      value: 
+      objectReference: {fileID: 1133659818}
     - target: {fileID: 5425577057048450401, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2479,12 +2533,12 @@ PrefabInstance:
     - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
       propertyPath: startScale
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
       propertyPath: scaleMultiplier
-      value: 1000
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
@@ -2501,6 +2555,11 @@ PrefabInstance:
       propertyPath: useBuffer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
+        type: 3}
+      propertyPath: audioH
+      value: 
+      objectReference: {fileID: 1133659818}
     - target: {fileID: 5425577057048450401, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2521,12 +2580,13 @@ GameObject:
   - component: {fileID: 1559413049}
   - component: {fileID: 1559413048}
   - component: {fileID: 1559413047}
+  - component: {fileID: 1559413052}
   m_Layer: 0
   m_Name: RTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &1559413047
 MonoBehaviour:
@@ -2609,11 +2669,27 @@ Transform:
   m_GameObject: {fileID: 1559413046}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 433, y: 49, z: 347}
-  m_LocalScale: {x: 100, y: 1000, z: 100}
+  m_LocalScale: {x: 100, y: 900, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1559413052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559413046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf5bf5c02cfc6234eae11d35c2a17250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startScale: 100
+  scaleMultiplier: 10
+  audioH: {fileID: 1133659818}
+  useBuffer: 1
 --- !u!1 &1593471235
 GameObject:
   m_ObjectHideFlags: 0
@@ -2997,12 +3073,12 @@ PrefabInstance:
     - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
       propertyPath: startScale
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
       propertyPath: scaleMultiplier
-      value: 1000
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
@@ -3019,6 +3095,11 @@ PrefabInstance:
       propertyPath: useBuffer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
+        type: 3}
+      propertyPath: audioH
+      value: 
+      objectReference: {fileID: 1133659818}
     - target: {fileID: 5425577057048450401, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3039,12 +3120,13 @@ GameObject:
   - component: {fileID: 1888151383}
   - component: {fileID: 1888151382}
   - component: {fileID: 1888151381}
+  - component: {fileID: 1888151386}
   m_Layer: 0
   m_Name: LTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!114 &1888151381
 MonoBehaviour:
@@ -3127,11 +3209,27 @@ Transform:
   m_GameObject: {fileID: 1888151380}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -428, y: 49, z: 371}
-  m_LocalScale: {x: 100, y: 1000, z: 100}
+  m_LocalScale: {x: 100, y: 900, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1888151386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1888151380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf5bf5c02cfc6234eae11d35c2a17250, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startScale: 100
+  scaleMultiplier: 10
+  audioH: {fileID: 1133659818}
+  useBuffer: 1
 --- !u!1 &1892036655
 GameObject:
   m_ObjectHideFlags: 0
@@ -3406,12 +3504,12 @@ PrefabInstance:
     - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
       propertyPath: startScale
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
       propertyPath: scaleMultiplier
-      value: 1000
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
@@ -3423,6 +3521,11 @@ PrefabInstance:
       propertyPath: useBuffer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7375753301158886395, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
+        type: 3}
+      propertyPath: audioH
+      value: 
+      objectReference: {fileID: 1133659818}
     - target: {fileID: 5425577057048450401, guid: b0e13fd646534ab42b14ce9e8d68dcf7,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
