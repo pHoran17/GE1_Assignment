@@ -68,7 +68,7 @@ public class CreateCubes : MonoBehaviour
                 //Color color = new Color(audioSpect.audioBandBuffer[band], audioSpect.audioBandBuffer[band], audioSpect.audioBandBuffer[band]);
                 //mat.SetColor("_EmissionColor", color);
             }*/
-            cubes[i].transform.localScale = new Vector3(transform.localScale.x, audioH.spectrum[i] * scale, transform.localScale.z);
+            cubes[i].transform.localScale = new Vector3(transform.localScale.x, (audioH.spectrum[i] * scale) + 2, transform.localScale.z);
         }
     }
 }
