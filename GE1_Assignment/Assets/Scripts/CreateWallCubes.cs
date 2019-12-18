@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CreateWallCubes : MonoBehaviour
 {
+    //Script for creating circle of cubes on wall in scene
     public GameObject prefab;
     List<GameObject> cubes;
     public AudioHandler audioH;

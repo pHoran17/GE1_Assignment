@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ChangeMaterialColor : MonoBehaviour
-{
+{ 
     public AudioSpectrum aud;
     Material mat;
     // Start is called before the first frame update

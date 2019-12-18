@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CreateCubes : MonoBehaviour
 {
+    //Script that creates circle of cubes around platter of record player in scene
     public GameObject cubePrefab;
     public GameObject[] cubeArray = new GameObject[512];
     List<GameObject> cubes;
@@ -69,6 +70,10 @@ public class CreateCubes : MonoBehaviour
                 //mat.SetColor("_EmissionColor", color);
             }*/
             cubes[i].transform.localScale = new Vector3(transform.localScale.x, (audioH.spectrum[i] * scale) + 2, transform.localScale.z);
+            if (i > 256)
+            {
+                cubes[i].transform.localScale = new Vector3(transform.localScale.x, ((audioH.spectrum[i] * scale) + 2) * 2, transform.localScale.z);
+            }
         }
     }
 }

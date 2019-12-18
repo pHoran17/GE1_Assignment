@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Light))]
 public class AudioLight : MonoBehaviour
 {
+    //Script for adjusting light insensity to music, not used
     public int band;
     public float minIntense, maxIntense;
     public Light changeLight;

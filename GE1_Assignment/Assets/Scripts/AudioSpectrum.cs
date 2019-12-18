@@ -6,6 +6,7 @@ using UnityEngine.Audio;
 [RequireComponent (typeof(AudioSource))]
 public class AudioSpectrum : MonoBehaviour
 {
+    //Original script for handling audio data, replaced by AudioHandler
     public float[] audSpec = new float[512];
     public static float[] freqBand = new float[8];
     public  float[] bandBuffer = new float[8];

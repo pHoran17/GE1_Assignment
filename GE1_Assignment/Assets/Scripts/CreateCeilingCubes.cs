@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CreateCeilingCubes : MonoBehaviour
 {
-    //GameObject[] objects;
+    //Script for creating ceiling cubes in scene
     List<GameObject> objects;
     public GameObject prefab;
     public AudioHandler audioH;

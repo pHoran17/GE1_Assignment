@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ScaleTower : MonoBehaviour
-{
+{   //Script used to scale towers in scene
     int band = 3;
     public float startScale, scaleMultiplier;
     public AudioHandler audioH;

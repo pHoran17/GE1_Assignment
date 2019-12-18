@@ -20,7 +20,7 @@ public class RotateSurface : MonoBehaviour
     void Update()
     {
         //Surface rotates on y axis only
-        transform.Rotate(0, 20, 0);
+        transform.Rotate(0, 10, 0);
         ColorChanger();
         //gObject.GetComponent<Renderer>().material.color = Color.HSVToRGB((float)audioSpec.audSpec.Length, 1, 1);
         //highestFreqVal = 0;
